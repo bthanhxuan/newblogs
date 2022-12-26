@@ -1,0 +1,40 @@
+.line-clamp-2 {
+    display: -webkit-box !important;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.zvn-article-thumb {
+    height: 225px;
+    display: block;
+}
+
+.zvn-article-thumb img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.mark,
+mark {
+    padding: 0;
+    background-color: gold;
+}
+
+.w3l-homeblock2 .author,
+.w3l-homeblock3 .author {
+    grid-template-columns: 60px auto 30px;
+}
+
+.w3l-homeblock2 .author .icon-like,
+.w3l-homeblock3 .author .icon-like {
+    font-size: 30px;
+    cursor: pointer;
+    color: grey;
+}
+
+.w3l-homeblock2 .author .icon-like.liked,
+.w3l-homeblock3 .author .icon-like.liked {
+    color: red;
+}
