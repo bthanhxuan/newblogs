@@ -180,10 +180,28 @@
 
                 <div class="row">
                     <div class="col-lg-8">
+                        <div class="leave-comment-form" id="comment">
+                            <h3 class="aside-title">Leave a reply</h3>
+                            <form method="post" id="comment-form">
+                                <div class="input-grids">
+                                    <div class="form-group">
+                                        <input type="text" id="comment-name" class="form-control"
+                                            placeholder="Your Name" required="">
+                                    </div>
+                                    <div class="form-group">
+                                        <textarea id="comment-message" class="form-control" placeholder="Your Comment"
+                                            required=""></textarea>
+                                    </div>
+                                </div>
+                                <div class="submit text-right">
+                                    <button class="btn btn-style btn-primary">Post Comment</a>
+                                </div>
+                            </form>
+                        </div>
                         <div class="comments">
-                            <h3 class="aside-title ">Recent comments(2)</h3>
-                            <div class="comments-grids">
-                                <div class="media-grid">
+                            <h3 class="aside-title ">Recent comments(<span id="comment-total">0</span>)</h3>
+                            <div class="comments-grids" id="comments-list">
+                                <!-- <div class="media-grid">
                                     <div class="media">
                                         <a class="comment-img" href="#url"><img src="assets/images/a1.jpg"
                                                 class="img-responsive" width="100px" alt="placeholder image"></a>
@@ -238,32 +256,8 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                </div> -->
                             </div>
-                        </div>
-
-
-                        <div class="leave-comment-form" id="comment">
-                            <h3 class="aside-title">Leave a reply</h3>
-                            <form action="#" method="post">
-                                <div class="input-grids">
-                                    <div class="form-group">
-                                        <input type="text" name="Name" class="form-control" placeholder="Your Name"
-                                            required="">
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="email" name="Email" class="form-control" placeholder="Email"
-                                            required="">
-                                    </div>
-                                    <div class="form-group">
-                                        <textarea name="Comment" class="form-control" placeholder="Your Comment"
-                                            required=""></textarea>
-                                    </div>
-                                </div>
-                                <div class="submit text-right">
-                                    <button class="btn btn-style btn-primary">Post Comment</a>
-                                </div>
-                            </form>
                         </div>
                     </div>
                 </div>
@@ -410,9 +404,9 @@
 
     <!-- bootstrap -->
     <script src="assets/js/bootstrap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.7/plugin/relativeTime.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.7/locale/vi.js"></script>
+    <script src="assets/js/dayjs/dayjs.min.js"></script>
+    <script src="assets/js/dayjs/plugin/relativeTime.js"></script>
+    <script src="assets/js/dayjs/locale/vi.js"></script>
 
     <script src="js/general.js"></script>
     <script src="js/menu.js"></script>

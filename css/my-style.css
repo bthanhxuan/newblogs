@@ -38,3 +38,13 @@ mark {
 .w3l-homeblock3 .author .icon-like.liked {
     color: red;
 }
+
+.page-numbers.disabled {
+    background-color: #ccc;
+    pointer-events: none;
+}
+
+.page-numbers.disabled:hover {
+    background-color: #ccc;
+    color: #718096;
+}

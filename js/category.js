@@ -54,5 +54,8 @@ function renderArticles(page = 1) {
       elArticles.innerHTML = htmlContent;
 
       renderPagination(page, totalPage);
+    })
+    .catch((error) => {
+      window.location.href = '404.html';
     });
 }

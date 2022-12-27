@@ -30,3 +30,79 @@ function getQueryParams(key) {
   const urlParams = new URLSearchParams(queryString);
   return urlParams.get(key);
 }
+
+function createId() {
+  // trả về một chuỗi ngẫu nhiên gồm 12 ký tự: 0-9a-zA-Z;
+  const characters = [
+    'A',
+    'B',
+    'C',
+    'D',
+    'E',
+    'F',
+    'G',
+    'H',
+    'I',
+    'J',
+    'K',
+    'L',
+    'M',
+    'N',
+    'O',
+    'P',
+    'Q',
+    'R',
+    'S',
+    'T',
+    'U',
+    'V',
+    'W',
+    'X',
+    'Y',
+    'Z',
+    'a',
+    'b',
+    'c',
+    'd',
+    'e',
+    'f',
+    'g',
+    'h',
+    'i',
+    'j',
+    'k',
+    'l',
+    'm',
+    'n',
+    'o',
+    'p',
+    'q',
+    'r',
+    's',
+    't',
+    'u',
+    'v',
+    'w',
+    'x',
+    'y',
+    'z',
+    '0',
+    '1',
+    '2',
+    '3',
+    '4',
+    '5',
+    '6',
+    '7',
+    '8',
+    '9',
+  ];
+  let length = 12;
+  let charactersLength = characters.length;
+  let result = '';
+  for (let i = 0; i < length; i++) {
+    let idx = Math.floor(Math.random() * charactersLength);
+    result += characters[idx];
+  }
+  return result;
+}

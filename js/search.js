@@ -9,8 +9,9 @@ function renderArticles(page = 1, searchValue = '') {
     .then((response) => response.json())
     .then((res) => {
       const articles = res.data;
-      const totalPage = res.meta.last_page;
+      let totalPage = res.meta.last_page;
       const total = res.meta.total;
+      if (articles.length === 0) totalPage = 0;
 
       const elArticles = document.getElementById('articles');
 

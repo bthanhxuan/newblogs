@@ -17,7 +17,7 @@ fetch(`${BASE_URL}categories_news/featured?limit=4`)
     categories.forEach((category, index) => {
       htmlContent += /*html*/ `
       <div class="col-lg-3 col-6 grids-feature mt-lg-0 mt-md-4 mt-3">
-        <a href="${category.link}">
+        <a href="category.html?id=${category.id}">
           <div class="area-box">
             <span class="${ICONS[index]}"></span>
             <h4 class="title-head">${category.name}</h4>
